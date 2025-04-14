@@ -7,7 +7,7 @@ This document outlines the process for contributing to the project in a structur
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
 - [How to Contribute](#how-to-contribute)
@@ -22,28 +22,28 @@ This document outlines the process for contributing to the project in a structur
 
 ---
 
-## 📜 Code of Conduct
+##  Code of Conduct
 
 We are committed to fostering a welcoming, inclusive, and respectful environment for everyone. Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ---
 
-## 🚀 How to Contribute
+##  How to Contribute
 
 There are many ways to contribute:
 
-- 💡 Suggest a feature
-- 🐛 Report a bug
-- 🛠 Fix a bug
-- 🧠 Improve performance or code readability
-- 🧪 Write unit/integration tests
-- 📚 Improve documentation
-- 🔌 Build plugins
-- 🌍 Translate text/localize content
+-  Suggest a feature
+-  Report a bug
+-  Fix a bug
+-  Improve performance or code readability
+-  Write unit/integration tests
+-  Improve documentation
+-  Build plugins
+-  Translate text/localize content
 
 ---
 
-## 🧰 Setting Up the Development Environment
+##  Setting Up the Development Environment
 
 1. **Clone the Repository**
 
@@ -76,7 +76,7 @@ There are many ways to contribute:
 
 ---
 
-## 🧑‍💻 Coding Guidelines
+##  Coding Guidelines
 
 - Follow **PEP8** standards.
 - Use descriptive commit messages (e.g., `fix: handle empty URLs in scanner`).
@@ -86,7 +86,7 @@ There are many ways to contribute:
 
 ---
 
-## 🧱 Making a Contribution
+##  Making a Contribution
 
 1. **Fork the Repository**
 
@@ -120,7 +120,7 @@ There are many ways to contribute:
 
 ---
 
-## 🔃 Pull Request Process
+##  Pull Request Process
 
 1. Open a pull request (PR) against the `main` branch.
 2. Follow the PR template:
@@ -132,11 +132,11 @@ There are many ways to contribute:
    - You may be asked to make changes.
    - Once approved, it will be merged into the main branch.
 
-✅ Tip: Ensure your code passes all tests before submitting a PR.
+ Tip: Ensure your code passes all tests before submitting a PR.
 
 ---
 
-## 🧪 Writing and Running Tests
+##  Writing and Running Tests
 
 - All test files are located in the `/tests` directory.
 - Use `unittest` or `pytest` to write and run tests.
@@ -150,7 +150,7 @@ pytest tests/
 
 ---
 
-## 🧾 Documentation Updates
+##  Documentation Updates
 
 - Documentation lives in the `docs/` directory and the main `README.md`.
 - Keep documentation up-to-date with code.
@@ -159,7 +159,7 @@ pytest tests/
 
 ---
 
-## 🐞 Reporting Issues
+##  Reporting Issues
 
 If you find a bug or security issue:
 
@@ -174,7 +174,7 @@ For security vulnerabilities, please contact us directly via email.
 
 ---
 
-## 📬 Contact
+##  Contact
 
 - **Project Maintainer:** [Labib Bin Shahed](https://github.com/la-b-ib)
 - **Email:** [labib-x@protonmail.com](mailto:labib-x@protonmail.com)
@@ -183,6 +183,6 @@ For security vulnerabilities, please contact us directly via email.
 
 ---
 
-## 🙏 Thank You
+##  Thank You
 
 Thank you for considering contributing to DuskProbe! Every bit of effort helps improve this powerful security tool. Together, we can build a stronger, more secure web.
