@@ -186,9 +186,9 @@ class Plugin:
 
 ### Vulnerabilities Detected
 
-| Vulnerability       | Endpoint              | Severity | Description                   |
+| Vulnerability       | Endpoint              | Severity | Description                    |
 |---------------------|------------------------|----------|-------------------------------|
-| Reflected XSS       | /search?q=test         | High     | Unescaped input in query param |
+| Reflected XSS       | /search?q=test         | High     | Unescaped input in query param|
 | SQL Injection       | /product?id=5          | Critical | MySQL error visible           |
 
 ---
