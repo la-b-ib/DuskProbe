@@ -269,6 +269,127 @@ git checkout -b my-new-feature
 
 Then open a pull request with your enhancements.
 
+
+##  GitHub Workflow
+
+DuskProbe follows a secure, modular, and collaborative development workflow that ensures code quality, security, and maintainability. Below is the recommended GitHub workflow for contributors and maintainers:
+
+###  1. Fork the Repository
+
+Start by forking the [DuskProbe repository](https://github.com/la-b-ib/DuskProbe) to your own GitHub account:
+
+```bash
+git clone https://github.com/your-username/DuskProbe.git
+cd DuskProbe
+```
+
+###  2. Create a New Branch
+
+Before making any changes, create a new feature or fix branch:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+###  3. Implement Your Feature or Fix
+
+- Follow [PEP 8](https://peps.python.org/pep-0008/) for Python code style.
+- Add docstrings and comments where necessary.
+- Securely handle any sensitive data or configurations.
+- Use existing module structure and best practices (modular, reusable, and tested).
+
+###  4. Run Tests and Linting
+
+Ensure your changes are secure and functional:
+
+```bash
+# Activate your virtual environment
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# Install test dependencies
+pip install -r requirements.txt
+
+# Run integrated tests (if available)
+pytest
+
+# Check code style
+flake8 .
+```
+
+###  5. Update Documentation
+
+- Update the `README.md` or appropriate module docs.
+- Add any new configuration options to `/config`.
+- Document your plugin if you're adding one under `/plugins`.
+
+###  6. Commit Your Changes
+
+Write clear, descriptive commit messages:
+
+```bash
+git add .
+git commit -m "Add feature: JWT algorithm downgrade vulnerability detection"
+```
+
+###  7. Push to Your Fork
+
+```bash
+git push origin feature/your-feature-name
+```
+
+###  8. Submit a Pull Request (PR)
+
+- Go to the original DuskProbe repository:  
+  [https://github.com/la-b-ib/DuskProbe](https://github.com/la-b-ib/DuskProbe)
+- Click **"Compare & pull request"**
+- Provide:
+  - Clear title and description
+  - Linked issue (if applicable)
+  - Summary of your changes and their purpose
+
+###  9. PR Review and Merge
+
+- The maintainer will review your code.
+- You may be asked to make changes before the PR is merged.
+- Once approved, it will be merged into the main codebase.
+
+---
+
+##  Branching Strategy
+
+| Branch        | Purpose                                  |
+|---------------|-------------------------------------------|
+| `main`        | Stable production code                    |
+| `dev`         | Development and staging integration       |
+| `feature/*`   | New features under development            |
+| `bugfix/*`    | Fixes for existing bugs                   |
+| `docs/*`      | Documentation improvements                |
+
+---
+
+##  Continuous Integration (CI/CD)
+
+> *Coming Soon* – DuskProbe will include GitHub Actions for automated testing and linting on pull requests.
+
+Planned integrations:
+
+- ✅ Pytest unit test automation
+- ✅ Code quality checks via `flake8` and `black`
+- ✅ Deployment of documentation to GitHub Pages
+
+---
+
+##  Contributor Guidelines
+
+- Respect coding standards and structure.
+- Always test your changes.
+- Make your PRs small, focused, and well-documented.
+- Keep security in mind at all times.
+
+See the full [CONTRIBUTING.md](CONTRIBUTING.md) for more.
+
+---
+
 ---
 ## License
 
