@@ -18,7 +18,6 @@ DuskProbe is a comprehensive, single-file Python-based web vulnerability scanner
 -  **SIEM Integration:** Forward logs to SIEMs with JSON formatting.
 -  **Periodic Scans (Daemon Mode):** Automatically rescan targets at regular intervals.
 -  **Fuzzing Engine:** Injects payloads into URL parameters using custom wordlists.
--  **Single File Core:** Packs over 2K lines of code into a single executable for portability.
 
 ---
 
