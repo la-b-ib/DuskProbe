@@ -1,5 +1,5 @@
 
-# DuskProbe - DuskProbe: Professional Industry–Standard Web Vulnerability Scanner
+# DuskProbe: Professional Industry–Standard Web Vulnerability Scanner
 
 DuskProbe is a comprehensive, single-file Python-based web vulnerability scanner engineered for security professionals. It includes over 100 advanced features like multi-threaded and distributed scanning, plugin-based extensibility, client-side testing, encryption, detailed reporting, and modern web security standards. This tool is designed to detect a wide array of vulnerabilities in web applications and APIs.
 
