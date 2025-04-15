@@ -378,6 +378,223 @@ Planned integrations:
 
 ---
 
+##  DuskProbe Workflow (Internal Code Flow)
+
+This section explains the internal architecture and execution flow of DuskProbe, from user input to final vulnerability reporting.
+
+---
+
+###  1. Initialization
+
+- **Entry Point**: `duskprobe.py`
+- **Actions**:
+  - Parses CLI arguments via `argparse`
+  - Loads configuration files from `config/`
+  - Initializes logging, encryption, and audit mechanisms
+  - Validates URL(s) or file inputs
+
+```python
+args = parse_arguments()
+config = load_config()
+session = SessionManager().initialize()
+```
+
+---
+
+###  2. Session & Input Handling
+
+- **Class**: `SessionManager`
+- **Purpose**:
+  - Creates secure HTTP session with retry policy
+  - Sets headers, cookies, proxy settings
+  - Optionally loads authentication details (Basic, OAuth2, etc.)
+
+```python
+session = SessionManager().initialize(auth_config=args.auth)
+```
+
+---
+
+###  3. Web Crawling & URL Collection
+
+- **Class**: `AdvancedScanner`
+- **Features**:
+  - Recursive link discovery
+  - Extracts forms, inputs, and endpoints
+  - Generates fuzzable URL set
+
+```python
+crawl_results = AdvancedScanner(session).crawl(url)
+```
+
+---
+
+###  4. Vulnerability Scanning
+
+- **Class**: `VulnerabilityScanner`
+- **Tests Performed**:
+  - XSS, SQLi, LFI, RFI, SSTI, XXE, JWT flaws, SSRF, CSRF, and more
+  - Payloads loaded from `config/payloads.json`
+  - Each test uses targeted injection + response analysis
+
+```python
+results = VulnerabilityScanner(session).run_all(crawl_results)
+```
+
+---
+
+###  5. Reconnaissance & Intelligence
+
+- **Class**: `ReconModule`, `ExternalIntelligence`
+- **Tasks**:
+  - WHOIS, DNSSEC, IP reputation checks
+  - Public intelligence gathering (threat feeds, CVE mapping)
+  - Subdomain and port scanning (future)
+
+```python
+intel_data = ReconModule().run(domain)
+```
+
+---
+
+###  6. Plugin Execution (Optional)
+
+- **Directory**: `plugins/`
+- **Dynamic Plugins**:
+  - Loaded at runtime via `importlib`
+  - Must define `Plugin.run(url, session)`
+  - Supports microservice security, container scans, GraphQL, WebSocket tests
+
+```python
+for plugin in discover_plugins():
+    plugin.run(url, session)
+```
+
+---
+
+###  7. Reporting & Logging
+
+- **Class**: `ReportGenerator`
+- **Output Formats**:
+  - Markdown, PDF, HTML, JSON
+- **Includes**:
+  - Executive summary
+  - Vulnerability list with severity & descriptions
+  - Timestamps & authenticated user info
+  - Screenshots (via Selenium)
+
+```python
+ReportGenerator().generate(results, format=args.output)
+```
+
+---
+
+###  8. Audit Logging & Encryption
+
+- **Module**: `audit_log.py`, `encryption_utils.py`
+- **Actions**:
+  - Logs every critical action with timestamp
+  - Sensitive data encrypted using HMAC-SHA256
+
+```python
+log_event('XSS detected on endpoint', encrypted=True)
+```
+
+---
+
+###  9. Distributed Scanning (Optional)
+
+- **Class**: `ClusterManager`, `DistributedScanner`
+- **Capabilities**:
+  - Dispatch scan tasks across scanning nodes
+  - Redis-based task queues (planned)
+  - Supports load balancing & scan deduplication
+
+```python
+DistributedScanner().scan_cluster(urls)
+```
+
+---
+
+###  10. Dashboard / SIEM Integration (Planned)
+
+- **Feature Roadmap**:
+  - Real-time dashboard visualization
+  - Export JSON to Elastic/Graylog/Splunk
+  - WebSocket-based live updates
+
+---
+
+##  Workflow Summary Diagram (Textual)
+
+```text
+User Input
+   │
+   ▼
+Argument Parsing & Config Load
+   │
+   ▼
+Session Initialization (Headers, Auth)
+   │
+   ▼
+Crawl Targets + URL Discovery
+   │
+   ├────────────┐
+   ▼            ▼
+Recon      Vulnerability Scan
+   │            │
+   ▼            ▼
+External    Plugin Engine
+Intel       (Optional)
+   │            │
+   └──────┬─────┘
+          ▼
+     Report Generation
+          │
+          ▼
+   Audit Log & Encryption
+          │
+          ▼
+     (Optional) Distributed Cluster
+```
+
+---
+
+##  Key Classes and Modules Reference
+
+| Module              | Purpose                                 |
+|---------------------|-----------------------------------------|
+| `duskprobe.py`      | Main entry script                       |
+| `SessionManager`    | Session config & auth handler           |
+| `AdvancedScanner`   | Crawler & input discovery               |
+| `VulnerabilityScanner` | Test engine for all exploits       |
+| `ReconModule`       | WHOIS, DNS, and OSINT                   |
+| `ExternalIntelligence` | Threat intel APIs                   |
+| `ReportGenerator`   | Multi-format report output              |
+| `ClusterManager`    | Node management for distributed scans   |
+| `plugins/`          | Optional dynamic scan extensions        |
+| `encryption_utils.py`| Secure encryption & data handling     |
+| `audit_log.py`      | Tamper-proof activity log               |
+
+---
+
+##  Best Practices Followed
+
+- Modular & extensible OOP design
+- Compliant with **OWASP** Top 10 Testing Guidelines
+- PEP8-conformant secure coding
+- Fault-tolerant with graceful error handling
+- Scalable across cloud or hybrid environments
+- Encrypted config & logs to prevent tampering
+
+---
+
+##  Summary
+
+DuskProbe processes begin with secure input handling and proceed through dynamic crawling, vulnerability testing, intelligence gathering, optional plugin scans, and reporting. Every step is logged and optionally encrypted. With optional distributed scanning, DuskProbe can scale from small engagements to enterprise-grade testing.
+
+---
+
 ##  Contributor Guidelines
 
 - Respect coding standards and structure.
