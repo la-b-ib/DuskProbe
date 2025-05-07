@@ -1,122 +1,148 @@
-# Contributor Covenant Code of Conduct
 
-## Our Pledge
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+# DuskProbe Code of Conduct
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+**Version**: 4.2\
+**Last Updated**: May 08, 2025\
+**Description**: This Code of Conduct outlines the expectations for all participants in the DuskProbe community, including contributors, users, and maintainers. It aims to ensure a respectful, inclusive, and professional environment for collaboration on DuskProbe, a professional web vulnerability scanner.
 
-## Our Standards
+## 1. Purpose
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+DuskProbe is dedicated to advancing web security through ethical vulnerability scanning. To achieve this, we foster a community that is welcoming, collaborative, and free from harassment or discrimination. This Code of Conduct applies to all interactions related to DuskProbe, including issue trackers, pull requests, forums, email communications, and any other project-related spaces.
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+## 2. Expected Behavior
 
-Examples of unacceptable behavior include:
+All community members are expected to:
+- **Be Respectful**: Treat others with courtesy, valuing diverse perspectives and experiences.
+- **Be Collaborative**: Engage constructively in discussions, provide clear feedback, and seek consensus.
+- **Be Inclusive**: Welcome contributions from individuals of all backgrounds, skill levels, and identities.
+- **Be Professional**: Use appropriate language and maintain a focus on technical merit in contributions.
+- **Act Ethically**: Adhere to ethical scanning practices, such as obtaining permission before scanning systems and respecting `robots.txt`.
+- **Communicate Clearly**: Provide detailed, actionable feedback in issues, pull requests, and communications.
+- **Acknowledge Contributions**: Give credit to others’ work and recognize collaborative efforts.
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+## 3. Unacceptable Behavior
 
-## Enforcement Responsibilities
+The following behaviors are not tolerated in the DuskProbe community:
+- **Harassment**:
+  - Offensive comments related to gender, race, ethnicity, religion, disability, age, sexual orientation, or other protected characteristics.
+  - Personal attacks, insults, or derogatory language.
+  - Unwelcome advances or attention, whether verbal or written.
+- **Disruptive Conduct**:
+  - Trolling, spamming, or posting off-topic content in project spaces.
+  - Deliberately derailing discussions or obstructing collaboration.
+- **Unethical Practices**:
+  - Unauthorized scanning of systems without explicit permission.
+  - Submitting malicious code or vulnerabilities that could harm DuskProbe or its users.
+  - Misrepresenting contributions or plagiarizing others’ work.
+- **Inappropriate Content**:
+  - Sharing or promoting explicit, violent, or illegal content.
+  - Using inappropriate usernames, avatars, or aliases in project spaces.
+- **Privacy Violations**:
+  - Sharing private information (e.g., personal data, credentials) without consent.
+  - Attempting to access or modify project resources (e.g., `config/`, `plugins/`) without authorization.
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+## 4. Responsibilities
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+### 4.1 Contributors
+- Follow the [Contribution Guidelines](DuskProbe_Contribution_Guidelines.md) for coding standards, testing, and submission processes.
+- Ensure contributions align with DuskProbe’s security features, such as input validation, encryption, and plugin verification.
+- Report security vulnerabilities responsibly per the [Security Policy](DuskProbe_Security_Policy.md).
+- Engage respectfully in code reviews, providing constructive feedback.
 
-## Scope
+### 4.2 Users
+- Adhere to the [Security Policy](DuskProbe_Security_Policy.md) for secure usage, including obtaining permission for scans and protecting reports.
+- Use DuskProbe ethically, avoiding scans that could disrupt or harm systems.
+- Report bugs or issues clearly, including reproduction steps and environment details.
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+### 4.3 Maintainers
+- Enforce this Code of Conduct fairly and consistently.
+- Respond to reports of violations promptly (within 48 hours for acknowledgment).
+- Provide clear guidance on contributions and resolve disputes professionally.
+- Protect the community by addressing unacceptable behavior swiftly.
 
-## Enforcement
+## 5. Reporting Violations
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-.
-All complaints will be reviewed and investigated promptly and fairly.
+If you experience or witness behavior that violates this Code of Conduct:
+- **Report Privately**:
+  - Email: `conduct@x.ai`.
+  - Include:
+    - Description of the incident, including date, time, and context.
+    - Screenshots, logs, or other evidence (if available).
+    - Preferred contact method for follow-up.
+- **Report Publicly** (if safe):
+  - Open an issue in the repository with the label `Code of Conduct Violation`.
+  - Avoid sharing sensitive details publicly to protect privacy.
+- **Expectations**:
+  - Acknowledgment within 48 hours.
+  - Investigation and resolution within 7 days, depending on severity.
+  - Confidentiality for all parties involved.
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+## 6. Enforcement
 
-## Enforcement Guidelines
+Violations of this Code of Conduct will be addressed through the following process:
+1. **Investigation**:
+   - Maintainers review the report, gather evidence, and contact involved parties privately.
+   - All reports are treated with confidentiality and impartiality.
+2. **Actions**:
+   - **Warning**: For minor or first-time violations, a private warning with guidance on expected behavior.
+   - **Temporary Ban**: For repeated or moderate violations, a temporary suspension from project spaces (e.g., 30 days).
+   - **Permanent Ban**: For severe or persistent violations, permanent exclusion from the DuskProbe community.
+   - **Content Removal**: Removal of offending comments, commits, or contributions.
+3. **Notification**:
+   - The reporter and violator are informed of the outcome privately.
+   - Public notice may be issued for transparency (without revealing sensitive details).
+4. **Appeals**:
+   - Violators may appeal within 7 days by emailing `conduct@x.ai` with new evidence or context.
+   - Appeals are reviewed by a different maintainer for fairness.
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+### 6.1 Examples of Consequences
+- **Harassment**: Offensive comment in an issue → Warning or temporary ban, comment removal.
+- **Unethical Scanning**: Unauthorized scan reported → Permanent ban, report to authorities if illegal.
+- **Malicious Code**: Submission of harmful plugin → Permanent ban, code rejection, security advisory.
+- **Disruptive Behavior**: Repeated off-topic posts → Temporary ban, content removal.
 
-### 1. Correction
+## 7. Scope
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+This Code of Conduct applies to:
+- All project spaces, including:
+  - Repository (issues, pull requests, code reviews).
+  - Email communications (`dev@x.ai`, `security@x.ai`, `conduct@x.ai`).
+  - Documentation and related guides.
+- Any community interactions related to DuskProbe, whether online or offline.
+- Contributions to code, plugins, documentation, or tests.
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+It does not govern:
+- Unrelated personal or professional conduct outside DuskProbe spaces.
+- Third-party platforms unless explicitly linked to DuskProbe (e.g., unofficial forums).
 
-### 2. Warning
+## 8. Commitment to Fairness
 
-**Community Impact**: A violation through a single incident or series
-of actions.
+- **Non-Discrimination**: Decisions on contributions or conduct are based on merit and compliance with this Code, not personal characteristics.
+- **Transparency**: Enforcement actions are documented internally, and outcomes are shared appropriately without compromising privacy.
+- **Continuous Improvement**: This Code of Conduct is reviewed annually or as needed to address community feedback.
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
+## 9. Alignment with DuskProbe’s Values
 
-### 3. Temporary Ban
+DuskProbe is built on principles of security, ethics, and collaboration. This Code of Conduct supports these values by:
+- Ensuring contributions enhance the tool’s security features (e.g., encryption, plugin validation).
+- Promoting ethical scanning practices aligned with the [Security Policy](DuskProbe_Security_Policy.md).
+- Encouraging diverse contributions to improve functionality, such as new vulnerability checks or performance optimizations.
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+## 10. Contact
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
+For questions, reports, or feedback:
+- **Email**: `conduct@x.ai`
+- **Issue Tracker**: Open an issue with the `Code of Conduct` label for non-sensitive matters.
+- **Website**: [https://x.ai](https://x.ai)
+- **Response Time**: Acknowledgment within 48 hours, resolution within 7 days for most cases.
 
-### 4. Permanent Ban
+## 11. Acknowledgments
 
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
+This Code of Conduct is inspired by open-source standards, including the Contributor Covenant and Mozilla Community Participation Guidelines, adapted to DuskProbe’s focus on web security and ethical scanning.
 
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+By participating in the DuskProbe community, you agree to uphold this Code of Conduct. Together, we can build a secure, inclusive, and impactful project.
 
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
 
 ## Project Documentation
 
@@ -149,11 +175,4 @@ https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
 
 
 
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
 
-[homepage]: https://www.contributor-covenant.org
-
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
