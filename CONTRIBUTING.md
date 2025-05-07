@@ -1,219 +1,331 @@
 
-# DuskProbe Contribution Guidelines  
-**v4.0 | Secure Development Protocol**
 
----
 
-##  Security-First Contribution Policy
+# DuskProbe Contribution Guidelines
 
-### Mandatory Pre-Commit Checks
+**Version**: 4.2\
+**Last Updated**: May 08, 2025\
+**Description**: This document outlines the guidelines for contributing to DuskProbe, a professional web vulnerability scanner. It covers the contribution process, coding standards, testing requirements, and best practices to ensure high-quality, secure contributions.
+
+## 1. Contribution Overview
+
+DuskProbe welcomes contributions including bug fixes, feature enhancements, plugin development, documentation improvements, and performance optimizations. All contributions must align with the project’s goals of security, performance, and reliability.
+
+### 1.1 Types of Contributions
+- **Code**:
+  - Bug fixes for existing components (e.g., `VulnerabilityScanner`, `Web3Auditor`).
+  - New features (e.g., OAuth2 support, WebSocket scanning).
+  - Performance optimizations (e.g., Bloom filter tuning).
+- **Plugins**:
+  - New vulnerability checks or analysis modules in `plugins/`.
+- **Documentation**:
+  - Updates to `README.md`, `DuskProbe_Documentation.md`, or inline docstrings.
+  - New guides or examples.
+- **Tests**:
+  - Unit, integration, or security tests for existing or new features.
+- **Issues**:
+  - Bug reports or feature requests with detailed reproductions.
+
+### 1.2 Contribution Principles
+- **Security First**: Contributions must not introduce vulnerabilities or weaken existing security measures.
+- **Modularity**: Code should be modular, reusable, and align with existing class structures.
+- **Ethical Standards**: Contributions must support ethical scanning (e.g., respect `robots.txt`).
+- **Quality**: Code must be well-tested, documented, and maintainable.
+
+## 2. Getting Started
+
+### 2.1 Prerequisites
+- **Python**: 3.8+.
+- **Dependencies**:
+  ```bash
+  pip install aiohttp requests stem web3 scikit-learn scapy pybloom-live cryptography colorama fake-useragent beautifulsoup4 pytest
+  sudo apt install tor
+  ```
+- **Tools**:
+  - Git for version control.
+  - Pylint for linting.
+  - pytest for testing.
+- **Environment**:
+  - Use a virtual environment (`python -m venv venv; source venv/bin/activate`).
+  - Clone the repository: `git clone <repository_url>`.
+
+### 2.2 Setting Up the Development Environment
+1. **Fork and Clone**:
+   - Fork the DuskProbe repository on the hosting platform (e.g., GitHub).
+   - Clone your fork: `git clone https://<your-username>/<repository>.git`.
+2. **Create Directories**:
+   ```bash
+   mkdir -p plugins reports config
+   chmod 700 plugins reports config
+   ```
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   If no `requirements.txt` exists, use the command from Prerequisites.
+4. **Verify Setup**:
+   ```bash
+   python DuskProbe.py --help
+   ```
+   Ensure the CLI displays without errors.
+
+## 3. Contribution Process
+
+### 3.1 Finding or Creating Issues
+- **Check Existing Issues**:
+  - Review the issue tracker for open bugs or feature requests.
+  - Avoid duplicating issues; comment on existing ones if relevant.
+- **Create New Issues**:
+  - Use the issue template (if provided) or include:
+    - **Title**: Clear, concise description (e.g., “XSS Payload False Positive in VulnerabilityScanner”).
+    - **Description**: Detailed explanation, including reproduction steps, expected behavior, and actual behavior.
+    - **Environment**: Python version, OS, dependency versions.
+    - **Priority**: Bug (critical/high/medium/low) or feature request.
+  - Assign yourself or request assignment if you plan to work on it.
+
+### 3.2 Branching and Commits
+- **Branch Naming**:
+  - Use descriptive names: `feature/<issue-id>-description`, `bugfix/<issue-id>-description`, or `docs/<description>`.
+  - Example: `feature/123-oauth2-support`, `bugfix/456-xss-false-positive`.
+- **Commits**:
+  - Write clear, concise commit messages:
+    - Start with a verb (e.g., “Add”, “Fix”, “Update”).
+    - Reference issue number: “Fix XSS payload parsing (#456)”.
+    - Example: “Add OAuth2 support to SessionManager (#123)”.
+  - Keep commits atomic (one logical change per commit).
+  - Sign commits with GPG if required by the repository.
+
+### 3.3 Pull Request (PR) Submission
+- **Create a PR**:
+  - Push your branch: `git push origin <branch-name>`.
+  - Open a PR against the `main` branch of the upstream repository.
+  - Use the PR template (if provided) or include:
+    - **Title**: Match the issue or describe the change (e.g., “Add OAuth2 Authentication (#123)”).
+    - **Description**: Summarize changes, link to issue, and explain impact.
+    - **Checklist**:
+      - Code follows coding standards.
+      - Tests added/updated and passing.
+      - Documentation updated (docstrings, README, etc.).
+      - Security implications assessed (e.g., no new vulnerabilities).
+- **Review Process**:
+  - Expect feedback within 5-7 days.
+  - Address reviewer comments promptly and push updates to the same branch.
+  - At least one maintainer approval is required for merging.
+- **Merge**:
+  - Maintainers will squash or rebase commits for a clean history.
+  - Delete the branch after merging unless needed for future work.
+
+## 4. Coding Standards
+
+### 4.1 General Guidelines
+- **Style**: Follow PEP 8, enforced via Pylint (`pylint DuskProbe.py`).
+  - Max line length: 100 characters.
+  - Use 4-space indentation.
+  - Use single quotes for strings unless double quotes are required.
+- **Naming**:
+  - Classes: `CamelCase` (e.g., `QuantumEncryptor`).
+  - Functions/Methods: `snake_case` (e.g., `scan_url`).
+  - Variables: `snake_case`, descriptive (e.g., `max_threads`).
+  - Constants: `UPPER_SNAKE_CASE` (e.g., `REQUEST_TIMEOUT`).
+- **Type Hints**: Use Python type annotations for all functions and methods (e.g., `def fetch(url: str) -> Optional[str]`).
+- **Error Handling**:
+  - Use specific exceptions (e.g., `ValueError`, `aiohttp.ClientError`).
+  - Log errors with `logger.error` and include context.
+  - Avoid bare `except` clauses.
+
+### 4.2 Security Requirements
+- **Input Validation**:
+  - Validate all user inputs (URLs, file paths, JSON configs) with regex or schema checks.
+  - Example: `re.match(r'^https?://', url)` for URLs.
+- **File Operations**:
+  - Set permissions explicitly: `os.chmod(path, 0o600)` for files, `0o700` for directories.
+  - Use context managers (`with open(...) as f`) for file handling.
+- **Network Requests**:
+  - Use `aiohttp` for asynchronous requests; `requests` for synchronous with retries.
+  - Sanitize headers to prevent injection (e.g., no user-controlled values in `User-Agent`).
+  - Respect rate limits with `Retry-After` handling.
+- **Plugins**:
+  - Implement a `run` method returning `Dict` with `type`, `severity`, and `details`.
+  - Avoid system-level operations (`os`, `subprocess`, `socket`).
+  - Include HMAC signature in `config/encryption.json`.
+- **Encryption**:
+  - Use `QuantumEncryptor` for sensitive data (e.g., reports, configs).
+  - Avoid hardcoding keys; use `os.getenv` or `encryption.json`.
+
+### 4.3 Documentation
+- **Docstrings**:
+  - Use Google style for all classes, methods, and functions.
+  - Example:
+    ```python
+    def scan_url(self, url: str) -> None:
+        """Scan a single URL for vulnerabilities.
+
+        Args:
+            url: The URL to scan (e.g., https://example.com).
+
+        Raises:
+            ValueError: If the URL is invalid.
+        """
+    ```
+- **Inline Comments**:
+  - Explain complex logic or non-obvious decisions.
+  - Example: `# Renew Tor circuit every 300s to maintain anonymity`.
+- **External Docs**:
+  - Update `README.md` or `DuskProbe_Documentation.md` for new features or changes.
+  - Include usage examples for new CLI options or plugins.
+
+## 5. Testing Requirements
+
+### 5.1 Test Types
+- **Unit Tests**:
+  - Cover individual methods (e.g., `QuantumEncryptor.encrypt`, `Config._load_plugins`).
+  - Use `pytest` with mocks for external dependencies (e.g., `aiohttp`, `stem`).
+- **Integration Tests**:
+  - Test interactions between components (e.g., `DuskProbe.scan_url` with `AdvancedScanner`).
+  - Use test servers like `http://testphp.vulnweb.com`.
+- **Security Tests**:
+  - Test for injection vulnerabilities (e.g., malformed URLs, JSON configs).
+  - Verify plugin signature validation and dangerous code rejection.
+- **Performance Tests**:
+  - Measure scan time and memory usage for large sites (`--crawl-depth 5`).
+  - Monitor Bloom filter capacity warnings.
+
+### 5.2 Writing Tests
+- **Location**: `tests/` directory (create if missing).
+- **Naming**: `test_<module>.py` (e.g., `test_vulnerability_scanner.py`).
+- **Structure**:
+  ```python
+  import pytest
+  from DuskProbe import QuantumEncryptor
+
+  def test_encryptor():
+      enc = QuantumEncryptor("test_key")
+      data = "test"
+      encrypted = enc.encrypt(data)
+      assert enc.decrypt(encrypted) == data
+  ```
+- **Mocks**:
+  - Use `pytest-mock` for network requests or file operations.
+  - Example: Mock `aiohttp.ClientSession.get` to return a test response.
+- **Coverage**:
+  - Aim for >80% coverage (`pytest --cov=DuskProbe`).
+  - Exclude third-party dependencies and CLI parsing.
+
+### 5.3 Running Tests
 ```bash
-# Run before every commit
-security_checks:
-  - semgrep --config=p/owasp-top-ten
-  - bandit -r . -ll
-  - python -m pip-audit
-  - git-secrets --scan
+pytest tests/ --cov=DuskProbe --cov-report=html
 ```
+- Fix any failures before submitting a PR.
+- Include test results in the PR description if coverage changes significantly.
 
-**Zero-Tolerance Rules:**
-- No secrets in code (automated revocation if detected)
-- All dependencies must have SBOM (Software Bill of Materials)
-- Cryptographic functions require 2x code review
+## 6. Plugin Development
 
----
+### 6.1 Structure
+- **Location**: `plugins/`.
+- **Naming**: `plugin_<name>.py` (e.g., `plugin_oauth2.py`).
+- **Template**:
+  ```python
+  class Plugin:
+      def run(self, url: str) -> Dict:
+          """Run the plugin on a URL.
 
-##  Development Environment Setup
+          Args:
+              url: The URL to scan.
 
-### Quantum-Secure Workspace
-```bash
-# 1. Clone with verification
-git clone https://github.com/duskprobe/ultimate.git
-cd ultimate && gpg --verify HEAD.sig
+          Returns:
+              Dict with type, severity, and details.
+          """
+          return {
+              "type": "OAUTH2_CHECK",
+              "severity": "INFO",
+              "details": f"Checked OAuth2 for {url}"
+          }
+  ```
 
-# 2. Isolated environment (Linux/macOS only)
-python -m venv .venv --copies
-source .venv/bin/activate
+### 6.2 Security
+- **Validation**:
+  - Generate SHA256 hash: `hashlib.sha256(open('plugin_name.py', 'rb').read()).hexdigest()`.
+  - Compute HMAC:
+    ```python
+    import hmac, hashlib
+    file_hash = "<sha256_hash>"
+    hmac_key = "<hmac_key_from_encryption.json>"
+    print(hmac.new(hmac_key.encode(), file_hash.encode(), hashlib.sha256).hexdigest())
+    ```
+  - Add to `config/encryption.json`:
+    ```json
+    {
+      "plugin_signatures": {
+        "plugin_oauth2.py": "<hmac_signature>"
+      }
+    }
+    ```
+- **Restrictions**:
+  - No direct file or network access; use `SessionManager` or `AdvancedSession`.
+  - Avoid dangerous modules (`os`, `subprocess`, `socket`).
 
-# 3. Secure dependency install
-pip install -r requirements.txt --require-hashes
-```
+### 6.3 Testing
+- Write unit tests in `tests/test_plugins.py`.
+- Example:
+  ```python
+  def test_oauth2_plugin():
+      from plugins.plugin_oauth2 import Plugin
+      plugin = Plugin()
+      result = plugin.run("https://example.com")
+      assert result["type"] == "OAUTH2_CHECK"
+  ```
 
-**Hardware Requirements:**
-- TPM 2.0 chip for key storage
-- Secure boot enabled
-- No debuggers attached during crypto operations
+## 7. Best Practices
 
----
+### 7.1 Code Quality
+- **Linting**: Run `pylint DuskProbe.py` and fix warnings (score >8/10).
+- **Refactoring**: Avoid modifying unrelated code unless fixing a bug.
+- **Modularity**: Extend existing classes (e.g., `AdvancedScanner`) rather than duplicating logic.
 
-##  Git Workflow
+### 7.2 Security
+- **No Hardcoded Secrets**: Use `QuantumEncryptor` or environment variables.
+- **Minimal Permissions**: Ensure new code respects 0o600/0o700 permissions.
+- **Safe Dependencies**: Avoid adding new dependencies unless critical; pin versions in `requirements.txt`.
 
-### Branching Protocol
-```mermaid
-gitGraph
-  commit
-  branch feature/xss-detection
-  checkout feature/xss-detection
-  commit
-  commit
-  checkout main
-  merge feature/xss-detection
-  branch hotfix/ssl-bypass
-  commit
-```
+### 7.3 Testing
+- **Edge Cases**:
+  - Test invalid inputs (e.g., malformed URLs, empty configs).
+  - Test failure scenarios (e.g., network timeouts, Tor unavailable).
+- **Mocking**: Mock external services (e.g., Web3 provider, PCAP files) to avoid live dependencies.
+- **Regression**: Ensure existing tests pass after changes.
 
-**Naming Conventions:**
-| Branch Type  | Format                      | Example                    |
-|--------------|-----------------------------|----------------------------|
-| Feature      | `feature/<short-id>`        | `feature/http2-cve`        |
-| Hotfix       | `hotfix/<cve-id>`           | `hotfix/CVE-2025-1234`     |
-| Research     | `research/<topic>`          | `research/quantum-kem`     |
+### 7.4 Documentation
+- **Update Docstrings**: Reflect any changes in method signatures or behavior.
+- **CLI Options**: Document new `--flags` in `DuskProbe_Documentation.md`.
+- **Examples**: Add usage examples for new features or plugins.
 
----
+## 8. Review Checklist
 
-##  Testing Requirements
+Before submitting a PR, verify:
+- [ ] Code follows PEP 8 and passes `pylint` (score >8/10).
+- [ ] Type hints are included for all new functions/methods.
+- [ ] Docstrings are updated in Google style.
+- [ ] Tests cover new code (>80% coverage).
+- [ ] Security checks pass (no injection risks, proper permissions).
+- [ ] Plugins include HMAC signatures and tests.
+- [ ] Documentation is updated (README, docstrings, external docs).
+- [ ] Commits are atomic with clear messages linking to issues.
+- [ ] PR description includes issue reference, changes, and test results.
 
-### Vulnerability Test Matrix
-```python
-# tests/test_quantum_encrypt.py
-@pytest.mark.parametrize("plaintext", [
-    "admin", 
-    "{\"token\":\"eyJhbG...\"}", 
-    os.urandom(1024)  # Random data
-])
-def test_encryption_roundtrip(plaintext):
-    encrypted = quantum_encrypt(plaintext)
-    assert quantum_decrypt(encrypted) == plaintext
-```
+## 9. Contact
 
-**Coverage Standards:**
-- 100% branch coverage for crypto modules
-- Fuzzing (AFL++) for all parsers
-- Negative testing required for security controls
+For questions or clarification:
+- **Issue Tracker**: Post in the repository’s issue section.
+- **Email**: `dev@x.ai` (for sensitive or private inquiries).
+- **Response Time**: Expect replies within 3-5 business days.
 
----
+## 10. Code of Conduct
+- Follow the project’s Code of Conduct (if provided) or general open-source principles.
+- Be respectful, collaborative, and open to feedback.
+- Avoid submitting malicious code or violating ethical scanning guidelines.
 
-##  Code Style Guide
+**Thank you for contributing to DuskProbe! Your efforts help improve a powerful, secure vulnerability scanner.**
 
-### Security-Critical Patterns
-```python
-# ✅ Approved
-def safe_compare(a: str, b: str) -> bool:
-    return hmac.compare_digest(a.encode(), b.encode())
-
-# ❌ Forbidden
-def unsafe_compare(a, b):
-    return a == b  # Timing attack vulnerable
-```
-
-**Enforced Rules:**
-- All strings: `str` type hints + length validation
-- Memory: Zeroization after sensitive operations
-- Logging: PII redaction with `[REDACTED]`
-
----
-
-##  Plugin Development
-
-### Security Sandbox Requirements
-```yaml
-# plugin_manifest.yaml
-security_profile:
-  memory_limit: "100MB"
-  syscalls: ["read", "stat"]
-  allowed_hosts: ["api.duskprobe.sec"]
-```
-
-**Plugin Template:**
-```python
-from duskprobe.plugins import BasePlugin
-
-class SecurePlugin(BasePlugin):
-    RISK_LEVEL = "HIGH"  # LOW/MEDIUM/HIGH/CRITICAL
-    
-    def execute(self, target: str):
-        # Inputs are pre-validated
-        if self.is_unsafe(target):
-            self.log("Potential RCE attempt", level="ALERT")
-            return None
-        return {"test": "passed"}
-```
-
----
-
-
-##  Pull Request Process
-
-### Security Review Checklist
-```markdown
-- [ ] Cryptographic changes reviewed by @crypto-team
-- [ ] ML model changes reviewed by @ai-security
-- [ ] Dependency changes audited via `pip-audit`
-- [ ] CVE check: `trivy fs --security-checks vuln .`
-```
-
-**Merge Requirements:**  
-1. 2x approvals from [CODEOWNERS](/.github/CODEOWNERS)  
-2. All CI tests pass (including quantum entropy check)  
-3. Signed-off-by: `git commit -s -m "..."`  
-
----
-
-##  Governance Model
-
-### Decision Hierarchy
-```text
-Security Council (5 members)
-  ↑
-Technical Steering Committee (TSC)
-  ↑
-Maintainers (15)
-  ↑
-Contributors (Unlimited)
-```
-
-**Voting Rules:**  
-- Cryptographic changes require 80% supermajority  
-- Backwards-incompatible changes: 3/5 Security Council votes  
-
----
-
-
-##  Getting Started
-
-### Good First Issues
-```bash
-# Find beginner-friendly tasks
-git grep "good-first-issue" --labels
-```
-
-**Starter Projects:**  
-1. Improve test coverage for TLS parser  
-2. Add new plugin template examples  
-3. Document threat model scenarios  
-
----
-
-
-
-### Key Sections Breakdown:
-
-1. **Security Pre-Commit Hooks** - Automated checks blocking unsafe code  
-2. **Quantum-Secure Setup** - Hardware-backed environment configuration  
-3. **Git Protocol** - Visual branch workflow with security labels  
-4. **Testing Standards** - Fuzzing requirements for vulnerability research  
-5. **Secure Coding Patterns** - Approved/forbidden constructs with examples  
-6. **Plugin Sandboxing** - Resource limits and syscall restrictions  
-7. **Vulnerability Reporting** - Encrypted disclosure process with SLA  
-8. **PR Security Review** - Mandatory checklist for merges  
-9. **Governance** - Multi-layer approval hierarchy  
-10. **Bounty Program** - Incentives for critical findings  
-
-Each section combines:
-- **Technical Specifications** (Exact commands/configs)  
-- **Compliance Requirements** (Checklists, SLAs)  
-- **Security Enforcement** (Automated + human review)  
-- **Educational Resources** (Guided learning paths)  
 
 ## Project Documentation
 
