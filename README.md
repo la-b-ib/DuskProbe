@@ -1,9 +1,8 @@
 
----
 
-# 🛡️ DuskProbe v4.5 — Web Vulnerability Scanner
+## DuskProbe  <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/hidden.gif"></a> 
 
-**DuskProbe** is a professional-grade web vulnerability scanner designed for ethical security testing. Optimized for Google Colab, it performs comprehensive assessments to detect common web vulnerabilities and generates detailed, exportable reports.
+**DuskProbe is a professional-grade web vulnerability scanner designed for ethical security testing. Optimized for Google Colab, it performs comprehensive assessments to detect common web vulnerabilities and generates detailed, exportable reports.**
 
 ---
 
