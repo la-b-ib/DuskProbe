@@ -24,9 +24,11 @@ It supports optional Tor integration for anonymity and includes site crawling fo
 ---
 
 ## 🔍 Preview 
-![DuskProbe Desktop Preview 1](https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/desktop.png)
-![DuskProbe Desktop Preview 2](https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/desktop%20(1).png)
-![DuskProbe Desktop Preview 3](https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/desktop%20(2).png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/desktop.png" width="30%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/desktop%20(1).png" width="30%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/desktop%20(2).png" width="30%" />
+</p>
 
 <hr>
 
