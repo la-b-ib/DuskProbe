@@ -568,14 +568,48 @@ https://api.example.com/v1
 
 This project is licensed under the MIT License.
 
+## 📈 **Recent Security Assessments**
+
+### 🎯 **Latest Scan Results**
+
+DuskProbe has successfully conducted comprehensive security assessments on multiple high-profile targets:
+
+#### 🏛️ **BRACU University (https://www.bracu.ac.bd/)**
+- **Vulnerabilities Found**: 3 (1 Critical, 2 High)
+- **Security Score**: 65/100
+- **Key Issues**: SSL/TLS configuration, missing security headers
+- **Report Generated**: `bracu_security_assessment.html`
+
+#### 🏫 **JCS Educational Institute (https://jcs.edu.bd/)**
+- **Vulnerabilities Found**: 6 (4 High, 1 Medium, 1 Low)
+- **Security Score**: 58/100
+- **Key Issues**: 82 sensitive files exposed, missing WAF protection
+- **Report Generated**: `jcs_security_assessment.html`
+
+#### ⚔️ **Arakan Army (https://www.arakanarmy.net/about-us)**
+- **Vulnerabilities Found**: 6 (5 High, 1 Medium)
+- **Security Score**: 37/100 (POOR Security Posture)
+- **Key Issues**: XSS vulnerabilities, SSRF attacks, missing security headers
+- **Technology Stack**: Java + Magento + Wix Platform
+- **Report Generated**: `arakanarmy_about_security_assessment.html`
+
+### 📊 **Assessment Statistics**
+- **Total Scans Conducted**: 3
+- **Average Vulnerabilities per Target**: 5
+- **Most Common Issues**: Missing security headers, exposed sensitive files
+- **OWASP 2025 Compliance**: Comprehensive framework integration
+
 ## Author
 
 **Labib Bin Shahed**
 - Professional Web Security Researcher
 - Ethical Hacker & Penetration Tester
+- GitHub: https://github.com/la-b-ib
+- Contact: labib-x@protonmail.com
 
 ## Version History
 
+- **v5.0**: Complete rewrite with advanced features, OWASP 2025 compliance, professional HTML reports
 - **v4.5**: Shell-optimized version with command-line interface
 - **v4.0**: Enhanced reporting and additional security checks
 - **v3.0**: Added Tor support and crawling capabilities
