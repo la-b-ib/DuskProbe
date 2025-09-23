@@ -1,0 +1,20 @@
+# DuskProbe v4.5 - Required Dependencies
+
+# Core dependencies (required)
+pandas
+numpy
+
+# Optional dependencies for enhanced functionality
+aiohttp
+beautifulsoup4
+fake-useragent
+PyYAML
+rich
+
+# Tor support (optional)
+stem
+
+# Development dependencies (optional)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
