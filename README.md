@@ -51,6 +51,16 @@ To empower cybersecurity professionals with a comprehensive, reliable, and ethic
 - **Comprehensive Coverage**: 25+ security testing modules and 62 reconnaissance components
 
 ---
+## HTML Report Preview
+<p align="left">
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop.png" width="32%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(1).png" width="32%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(3).png" width="32%" />    
+</p>
+
+
+
+<hr>
 
 ## shell preview
 
