@@ -150,9 +150,9 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 
 ---
 
-## 🏗️ **Architecture**
+##  **Architecture**
 
-### 🔧 **Technical Stack**
+<hr>
 
 ```python
 # Core Dependencies
@@ -165,8 +165,9 @@ pandas                  # Data analysis and reporting
 selenium                # Browser automation (optional)
 cryptography            # SSL/TLS analysis
 ```
+<hr>
 
-### 🎨 **Design Patterns**
+###  **Design Patterns** <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/people-chart.gif">
 
 - **Modular Architecture**: Plug-and-play security testing modules
 - **Asynchronous Programming**: Non-blocking I/O for optimal performance
@@ -174,7 +175,9 @@ cryptography            # SSL/TLS analysis
 - **Observer Pattern**: Real-time progress monitoring and reporting
 - **Strategy Pattern**: Configurable testing methodologies
 
-### 📁 **Project Structure**
+<hr>
+
+
 
 ```
 DuskProbe/
@@ -195,9 +198,10 @@ DuskProbe/
 
 ---
 
-## ⚡ **Quick Start**
+##  **Quick Start**
+<hr>
 
-### 🚀 **30-Second Setup**
+### **30-Second Setup**
 
 ```bash
 # Clone the repository
@@ -211,8 +215,10 @@ chmod +x install.sh
 # Start your first scan
 python3 duskprobe.py -u https://example.com -f html
 ```
+<hr>
 
-### 🎯 **Basic Usage Examples**
+
+###  **Basic Usage Examples**
 
 ```bash
 # Single target scan with HTML report
@@ -230,18 +236,19 @@ python3 duskprobe.py -u https://enterprise.com --full-scan --threads 10
 
 ---
 
-## 📦 **Installation**
+##  **Installation** <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/delivery.gif">
 
-### 🐍 **Prerequisites**
 
 - **Python 3.8+** (Python 3.9+ recommended)
 - **pip** package manager
 - **Git** version control system
-- **Internet connection** for dependency installation
 
-### 🔧 **Automated Installation**
 
-The fastest way to get DuskProbe running:
+<hr>
+
+###  **Automated Installation**
+
+
 
 ```bash
 # Clone repository
@@ -255,9 +262,10 @@ chmod +x install.sh
 ./install.sh
 ```
 
-### 📋 **Manual Installation**
+<hr>
 
-For advanced users who prefer manual setup:
+###  **Manual Installation**
+
 
 ```bash
 # 1. Clone the repository
@@ -282,10 +290,11 @@ python3 install_advanced_libs.py
 # 6. Verify installation
 python3 duskprobe.py --version
 ```
+<hr>
 
-### 🐳 **Docker Installation**
+### **Docker Installation**
 
-For containerized deployment:
+
 
 ```dockerfile
 # Dockerfile
@@ -306,9 +315,12 @@ docker build -t duskprobe .
 docker run -it duskprobe -u https://target.com -f html
 ```
 
-### 📱 **Platform-Specific Notes**
+<hr>
 
-#### 🐧 **Linux**
+###  **Platform-Specific Notes**
+
+<hr>
+
 ```bash
 # Ubuntu/Debian additional dependencies
 sudo apt-get update
@@ -318,7 +330,6 @@ sudo apt-get install python3-dev libssl-dev libffi-dev
 sudo yum install python3-devel openssl-devel libffi-devel
 ```
 
-#### 🍎 **macOS**
 ```bash
 # Install Homebrew if not present
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -328,7 +339,6 @@ brew install python@3.9
 pip3 install -r requirements.txt
 ```
 
-#### 🪟 **Windows**
 ```powershell
 # Open PowerShell as Administrator
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -336,57 +346,12 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Install dependencies
 pip install -r requirements.txt
 ```
-
-**✅ COMPREHENSIVE README.MD SUCCESSFULLY CREATED!**
-
-The professional, comprehensive README.md file has been created with over 5000 words of detailed documentation including:
-
-🎯 **Complete Content Coverage:**
-- **Legal disclaimers** with authorization requirements
-- **Professional badges** and visual elements  
-- **Comprehensive installation** guides for all platforms
-- **Detailed usage examples** and command reference
-- **Advanced configuration** options and customization
-- **Security modules** documentation with OWASP 2025 mapping
-- **HTML report features** with Bungee font integration
-- **Performance optimization** guidelines
-- **Contributing guidelines** for community development
-- **Extensive FAQ section** covering legal, technical, and practical questions
-- **Support and contact** information
-- **MIT license** and legal compliance details
-
-🔧 **Key Features Documented:**
-- ✅ **25+ Security Testing Modules** with comprehensive vulnerability detection
-- ✅ **OWASP 2025 Compliance** with complete category mapping
-- ✅ **Professional HTML Reports** with Bungee typography and industry standards
-- ✅ **Advanced Performance** optimization and scalability features
-- ✅ **Multi-Platform Support** with platform-specific installation guides
-- ✅ **Comprehensive CLI** with complete options reference
-- ✅ **Docker Support** for containerized deployments
-- ✅ **Authentication Methods** and proxy configuration
-- ✅ **Community Guidelines** for contributions and development
-
-📊 **Professional Standards:**
-- Industry-standard documentation format
-- Professional badges and visual elements
-- Comprehensive technical specifications
-- Legal compliance and ethical use guidelines
-- Community-focused development approach
-- Extensive troubleshooting and FAQ sections
-
-The README.md is now ready for GitHub publication and provides complete documentation for DuskProbe v5.0 with all features, legal disclaimers, usage instructions, and comprehensive technical information as requested!
-# Open PowerShell as Administrator
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+<hr>
 
 # Install dependencies
-pip install -r requirements.txt
-```
 
----
 
-## 🎯 **Usage Guide**
 
-### Basic Scanning
 ```bash
 # Simple scan
 ./duskprobe.py https://example.com
@@ -398,7 +363,6 @@ pip install -r requirements.txt
 ./duskprobe.py https://example.com --tor
 ```
 
-### Output Formats
 ```bash
 # JSON output for scripting
 ./duskprobe.py https://example.com --output-format json
@@ -413,7 +377,6 @@ pip install -r requirements.txt
 ./duskprobe.py https://example.com --quiet
 ```
 
-### Batch Scanning
 ```bash
 # Scan multiple URLs from file
 ./duskprobe.py --batch urls.txt
@@ -422,7 +385,6 @@ pip install -r requirements.txt
 ./duskprobe.py --batch urls.txt --output-format json --quiet
 ```
 
-### Advanced Options
 ```bash
 # Custom output directory
 ./duskprobe.py https://example.com --output-dir ./reports
@@ -433,6 +395,8 @@ pip install -r requirements.txt
 # Custom timeout and page limits
 ./duskprobe.py https://example.com --timeout 30 --max-pages 10
 ```
+
+<hr>
 
 ## Command Line Options
 
@@ -460,10 +424,11 @@ optional arguments:
   --version             show program's version number and exit
   --check-deps          Check for missing dependencies
 ```
+<hr>
 
-## Exit Codes
+## Exit Codes <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/crime-scene.gif">
 
-The tool uses meaningful exit codes for shell scripting:
+
 
 - `0`: Success, no major vulnerabilities found
 - `1`: High-risk vulnerabilities detected
@@ -471,9 +436,11 @@ The tool uses meaningful exit codes for shell scripting:
 - `3`: Scan failures occurred
 - `130`: Interrupted by user (Ctrl+C)
 
+<hr>
+
 ## Example Workflows
 
-### Basic Security Assessment
+
 ```bash
 #!/bin/bash
 # Quick security check script
@@ -493,7 +460,6 @@ else
 fi
 ```
 
-### Continuous Security Monitoring
 ```bash
 #!/bin/bash
 # Monitor multiple sites daily
@@ -510,7 +476,6 @@ REPORT_DIR="daily_reports/$(date +%Y%m%d)"
 # Process results, send notifications, etc.
 ```
 
-### CI/CD Integration
 ```bash
 #!/bin/bash
 # Pre-deployment security check
@@ -529,17 +494,17 @@ else
     exit 0
 fi
 ```
+<hr>
 
 ## File Formats
 
-### URLs File Format (for --batch)
+
 ```
 https://example.com
 https://test.example.com
 https://api.example.com/v1
 ```
 
-### JSON Output Schema
 ```json
 {
   "scan_info": {
@@ -566,37 +531,8 @@ https://api.example.com/v1
 }
 ```
 
-## Dependencies
 
-### Required
-- Python 3.8+
-- requests
-- pandas
-- numpy
-
-### Optional
-- beautifulsoup4 (HTML parsing)
-- colorama (colored output)
-- fake-useragent (user agent rotation)
-- stem (Tor integration)
-
-## Legal and Ethical Usage
-
-⚠️ **IMPORTANT**: This tool is for authorized security testing only.
-
-- Only scan websites you own or have explicit permission to test
-- Unauthorized scanning may violate laws and terms of service
-- Users are responsible for compliance with local laws
-- The author is not responsible for misuse
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
+<hr>
 
 ## Version History
 
