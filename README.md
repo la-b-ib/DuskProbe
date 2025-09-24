@@ -19,7 +19,6 @@
 ---
 ## **LEGAL DISCLAIMER**  <a href=""><img align="left" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/web-code.gif"></a>
 
- **⚠️ AUTHORIZED USE ONLY**
  
 DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate security professionals, penetration testers, and authorized personnel conducting lawful security evaluations with **explicit written consent** from target system owners.
 <hr>
@@ -59,7 +58,7 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 - **Comprehensive Coverage**: 25+ security testing modules and 62 reconnaissance components
 
 ---
-## 📦 HTML Report Preview
+##  HTML Report Preview
 <p align="left">
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/html%20report/desktop%20(1).png" width="32%" />
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/html%20report/desktop%20(2).png" width="32%" />
@@ -70,7 +69,7 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 
 <hr>
 
-## 📮 Terminal Report Preview
+##  Terminal Report Preview
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop.png" width="32%" />
@@ -97,9 +96,11 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 
 
 
-## ✨ **Key Features**
+##  **Key Features**
 
-### 🛡️ **Core Security Testing**
+<hr>
+
+###  <p align="center"> **Core Security Testing** </p>
 
 | Feature | Description | Coverage |
 |---------|-------------|----------|
@@ -112,7 +113,11 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 | **Command Injection** | OS command execution vulnerability testing | Blind, time-based detection |
 | **File Upload Bypass** | Malicious file upload prevention testing | Extension, MIME type validation |
 
-### 🔍 **Advanced Reconnaissance**
+<hr>
+
+
+###  **Advanced Reconnaissance**  <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/data-safety.gif"></a>
+
 
 - **Technology Stack Detection**: Comprehensive framework and CMS identification
 - **Directory & File Discovery**: Intelligent brute-force with smart wordlists
@@ -121,7 +126,9 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 - **HTTP Header Security**: Security header compliance evaluation
 - **WAF Detection**: Web Application Firewall identification and bypass techniques
 
-### 📊 **Professional Reporting**
+<hr>
+
+###  **Professional Reporting**
 
 - **Industry-Standard HTML Reports**: Beautiful, interactive reports with Bungee typography
 - **Executive Summary**: C-level executive briefings with risk assessments
@@ -130,7 +137,9 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 - **CVSS v3.1 Scoring**: Professional vulnerability severity assessment
 - **Remediation Guidance**: Actionable security recommendations
 
-### 🚀 **Performance & Scalability**
+<hr>
+
+###  **Performance & Scalability**
 
 - **Asynchronous Processing**: High-speed concurrent request handling
 - **Rate Limiting**: Respectful scanning with configurable delays
