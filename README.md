@@ -1,6 +1,10 @@
 # DuskProbe  <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/ssl.gif"></a>
 
 DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate security professionals, penetration testers, and authorized personnel conducting lawful security evaluations with **explicit written consent** from target system owners.
+<hr>
+
+[![YouTube](https://img.shields.io/badge/Watch_on-YouTube-red?logo=youtube)](https://www.youtube.com/watch?v=IH0FUPe/watch?v=IH0FUPe63CA)
+
 
 ---
 ## **LEGAL DISCLAIMER**  <a href=""><img align="left" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/web-code.gif"></a>
