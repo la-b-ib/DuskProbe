@@ -55,11 +55,20 @@ To empower cybersecurity professionals with a comprehensive, reliable, and ethic
 ## shell preview
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop.png" width="32%" />
-  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(1).png" width="32%" />
-  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(3).png" width="32%" />
-  
-  
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop.png" width="33%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(1).png" width="33%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(3).png" width="33%" />    
+</p>
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(5).png" width="33%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(6).png" width="33%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(7).png" width="33%" />    
+</p>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(8).png" width="33%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(9).png" width="33%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(10).png" width="33%" />    
 </p>
 
 
