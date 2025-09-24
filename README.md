@@ -51,35 +51,40 @@ To empower cybersecurity professionals with a comprehensive, reliable, and ethic
 - **Comprehensive Coverage**: 25+ security testing modules and 62 reconnaissance components
 
 ---
-## HTML Report Preview
+## 📦 HTML Report Preview
 <p align="left">
-  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop.png" width="32%" />
-  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(1).png" width="32%" />
-  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(3).png" width="32%" />    
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/html%20report/desktop%20(1).png" width="32%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/html%20report/desktop%20(2).png" width="32%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/html%20report/desktop%203.png" width="32%" />    
 </p>
 
 
 
 <hr>
 
-## shell preview
+## 📮 Terminal Report Preview
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop.png" width="32%" />
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(1).png" width="32%" />
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(3).png" width="32%" />    
 </p>
+<hr>
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(5).png" width="32%" />
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(6).png" width="32%" />
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(7).png" width="32%" />    
 </p>
+
+<hr>
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(8).png" width="32%" />
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(9).png" width="32%" />
   <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(10).png" width="32%" />    
 </p>
+<hr>
 
 
 
@@ -574,48 +579,6 @@ https://api.example.com/v1
 4. Add tests if applicable
 5. Submit a pull request
 
-## License
-
-This project is licensed under the MIT License.
-
-## 📈 **Recent Security Assessments**
-
-### 🎯 **Latest Scan Results**
-
-DuskProbe has successfully conducted comprehensive security assessments on multiple high-profile targets:
-
-#### 🏛️ **BRACU University (https://www.bracu.ac.bd/)**
-- **Vulnerabilities Found**: 3 (1 Critical, 2 High)
-- **Security Score**: 65/100
-- **Key Issues**: SSL/TLS configuration, missing security headers
-- **Report Generated**: `bracu_security_assessment.html`
-
-#### 🏫 **JCS Educational Institute (https://jcs.edu.bd/)**
-- **Vulnerabilities Found**: 6 (4 High, 1 Medium, 1 Low)
-- **Security Score**: 58/100
-- **Key Issues**: 82 sensitive files exposed, missing WAF protection
-- **Report Generated**: `jcs_security_assessment.html`
-
-#### ⚔️ **Arakan Army (https://www.arakanarmy.net/about-us)**
-- **Vulnerabilities Found**: 6 (5 High, 1 Medium)
-- **Security Score**: 37/100 (POOR Security Posture)
-- **Key Issues**: XSS vulnerabilities, SSRF attacks, missing security headers
-- **Technology Stack**: Java + Magento + Wix Platform
-- **Report Generated**: `arakanarmy_about_security_assessment.html`
-
-### 📊 **Assessment Statistics**
-- **Total Scans Conducted**: 3
-- **Average Vulnerabilities per Target**: 5
-- **Most Common Issues**: Missing security headers, exposed sensitive files
-- **OWASP 2025 Compliance**: Comprehensive framework integration
-
-## Author
-
-**Labib Bin Shahed**
-- Professional Web Security Researcher
-- Ethical Hacker & Penetration Tester
-- GitHub: https://github.com/la-b-ib
-- Contact: labib-x@protonmail.com
 
 ## Version History
 
