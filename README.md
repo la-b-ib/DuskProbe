@@ -34,7 +34,7 @@
 
 ---
 
-## 🔍 **Overview**
+## Overview  <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/LeafByte/main/icons/leaf.gif"></a>
 
 DuskProbe v5.0 is a state-of-the-art web application security scanner designed for comprehensive vulnerability assessment and penetration testing. Built with modern Python architecture and advanced security testing methodologies, DuskProbe provides professional-grade security analysis capabilities for cybersecurity professionals.
 
