@@ -34,28 +34,6 @@
 
 ---
 
-## 📋 **Table of Contents**
-
-- [🔍 Overview](#-overview)
-- [✨ Key Features](#-key-features)
-- [🏗️ Architecture](#️-architecture)
-- [⚡ Quick Start](#-quick-start)
-- [📦 Installation](#-installation)
-- [🎯 Usage Guide](#-usage-guide)
-- [🔧 Advanced Configuration](#-advanced-configuration)
-- [📊 Report Generation](#-report-generation)
-- [🛡️ Security Modules](#️-security-modules)
-- [🎨 HTML Report Features](#-html-report-features)
-- [💻 Command Line Interface](#-command-line-interface)
-- [🔍 Vulnerability Categories](#-vulnerability-categories)
-- [📈 Performance Optimization](#-performance-optimization)
-- [🤝 Contributing](#-contributing)
-- [❓ Frequently Asked Questions](#-frequently-asked-questions)
-- [📞 Support & Contact](#-support--contact)
-- [📄 License](#-license)
-
----
-
 ## 🔍 **Overview**
 
 DuskProbe v5.0 is a state-of-the-art web application security scanner designed for comprehensive vulnerability assessment and penetration testing. Built with modern Python architecture and advanced security testing methodologies, DuskProbe provides professional-grade security analysis capabilities for cybersecurity professionals.
@@ -73,6 +51,19 @@ To empower cybersecurity professionals with a comprehensive, reliable, and ethic
 - **Comprehensive Coverage**: 25+ security testing modules and 62 reconnaissance components
 
 ---
+
+## shell preview
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop.png" width="32%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(1).png" width="32%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/img/shell%20report/desktop%20(3).png" width="32%" />
+  
+  
+</p>
+
+
+
 
 ## ✨ **Key Features**
 
