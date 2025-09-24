@@ -39,11 +39,15 @@
 **DuskProbe v5.0 is a state-of-the-art web application security scanner designed for comprehensive vulnerability assessment and penetration testing. Built with modern Python architecture and advanced security testing methodologies, DuskProbe provides professional-grade security analysis capabilities for cybersecurity professionals.**
 <hr>
 
-### 🎯 **Mission Statement**
+### **Mission Statement** <a href=""><img align="left" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/mission.gif"></a>
 
-To empower cybersecurity professionals with a comprehensive, reliable, and ethical web application security testing platform that adheres to industry standards and best practices while maintaining the highest levels of accuracy and efficiency.
 
-### 🔬 **Technical Excellence**
+**To empower cybersecurity professionals with a comprehensive, reliable, and ethical web application security testing platform that adheres to industry standards and best practices while maintaining the highest levels of accuracy and efficiency.**
+
+<hr>
+
+
+###  **Technical Excellence**
 
 - **Advanced Detection Engine**: Multi-layered vulnerability detection with low false-positive rates
 - **OWASP 2025 Compliance**: Full alignment with latest OWASP Top 10 security standards
