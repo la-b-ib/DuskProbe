@@ -17,20 +17,21 @@
 </div>
 
 ---
+## **LEGAL DISCLAIMER**  <a href=""><img align="left" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/web-code.gif"></a>
 
-## 🚨 **CRITICAL LEGAL DISCLAIMER**
+ **⚠️ AUTHORIZED USE ONLY**
+ 
+DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate security professionals, penetration testers, and authorized personnel conducting lawful security evaluations with **explicit written consent** from target system owners.
+<hr>
+ 
+**WARNING:** Unauthorized scanning, testing, or access to computer systems may constitute a criminal offense under computer fraud and abuse laws in your jurisdiction. Users assume complete legal responsibility for all scanning activities.
+<hr>
 
-> **⚠️ AUTHORIZED USE ONLY**
-> 
-> DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate security professionals, penetration testers, and authorized personnel conducting lawful security evaluations with **explicit written consent** from target system owners.
-> 
-> **WARNING:** Unauthorized scanning, testing, or access to computer systems may constitute a criminal offense under computer fraud and abuse laws in your jurisdiction. Users assume complete legal responsibility for all scanning activities.
-> 
-> By using this software, you certify that you:
-> - Possess valid authorization from target system owner(s)
-> - Acknowledge full compliance with applicable cybersecurity regulations
-> - Understand the legal implications of vulnerability assessment activities
-> - Will use this tool only for legitimate security testing purposes
+
+ - **Possess valid authorization from target system owner(s)**
+ - **Acknowledge full compliance with applicable cybersecurity regulations**
+ - **Understand the legal implications of vulnerability assessment activities**
+ - **Will use this tool only for legitimate security testing purposes**
 
 ---
 
@@ -48,6 +49,8 @@
 
 
 ###  **Technical Excellence**
+
+<hr>
 
 - **Advanced Detection Engine**: Multi-layered vulnerability detection with low false-positive rates
 - **OWASP 2025 Compliance**: Full alignment with latest OWASP Top 10 security standards
