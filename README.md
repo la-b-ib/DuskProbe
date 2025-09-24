@@ -1,27 +1,10 @@
-# 🔍 DuskProbe - Advanced Web Application Security Scanner
+# DuskProbe  <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/ssl.gif"></a>
 
-<div align="center">
-
-![DuskProbe Logo](https://via.placeholder.com/800x200/1a1a2e/ffffff?text=🔍+DUSKPROBE+v5.0)
-
-[![Version](https://img.shields.io/badge/version-5.0.0-blue.svg)](https://github.com/la-b-ib/DuskProbe)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://python.org)
-[![Security](https://img.shields.io/badge/security-penetration%20testing-red.svg)](https://github.com/la-b-ib/DuskProbe)
-[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos%20%7C%20windows-lightgrey.svg)](https://github.com/la-b-ib/DuskProbe)
-
-**Professional-Grade Web Application Vulnerability Assessment Tool**
-
-*Comprehensive security testing suite for ethical hackers, penetration testers, and cybersecurity professionals*
-
-</div>
+DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate security professionals, penetration testers, and authorized personnel conducting lawful security evaluations with **explicit written consent** from target system owners.
 
 ---
 ## **LEGAL DISCLAIMER**  <a href=""><img align="left" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/web-code.gif"></a>
 
- 
-DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate security professionals, penetration testers, and authorized personnel conducting lawful security evaluations with **explicit written consent** from target system owners.
-<hr>
  
 **WARNING:** Unauthorized scanning, testing, or access to computer systems may constitute a criminal offense under computer fraud and abuse laws in your jurisdiction. Users assume complete legal responsibility for all scanning activities.
 <hr>
@@ -549,3 +532,31 @@ https://api.example.com/v1
 ---
 
 **Disclaimer**: This tool is provided for educational and authorized testing purposes only. Use responsibly and ethically.
+<hr>
+
+## Project Documentation
+
+<div style="display: flex; gap: 10px; margin: 15px 0; align-items: center; flex-wrap: wrap;">
+
+[![License](https://img.shields.io/badge/License-See_FILE-007EC7?style=for-the-badge&logo=creativecommons)](LICENSE)
+[![Security](https://img.shields.io/badge/Security-Policy_%7C_Reporting-FF6D00?style=for-the-badge&logo=owasp)](SECURITY.md)
+[![Contributing](https://img.shields.io/badge/Contributing-Guidelines-2E8B57?style=for-the-badge&logo=git)](CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/Code_of_Conduct-Community_Standards-FF0000?style=for-the-badge&logo=opensourceinitiative)](CODE_OF_CONDUCT.md)
+
+</div>
+<hr>
+
+## Contact Information
+
+
+
+  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:labib.45x@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/la-b-ib)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/la-b-ib/)
+[![Portfolio](https://img.shields.io/badge/Website-0A5C78?style=for-the-badge&logo=internet-explorer&logoColor=white)](https://la-b-ib.github.io/)
+
+
+
+
+---
