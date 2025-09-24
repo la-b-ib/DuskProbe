@@ -128,7 +128,7 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 
 <hr>
 
-###  **Professional Reporting**
+###  **Professional Reporting** <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/cybersecurity.gif"></a>
 
 - **Industry-Standard HTML Reports**: Beautiful, interactive reports with Bungee typography
 - **Executive Summary**: C-level executive briefings with risk assessments
@@ -139,7 +139,8 @@ DuskProbe is a cybersecurity assessment tool exclusively designed for legitimate
 
 <hr>
 
-###  **Performance & Scalability**
+
+###  **Performance & Scalability** <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/performance.gif"></a>
 
 - **Asynchronous Processing**: High-speed concurrent request handling
 - **Rate Limiting**: Respectful scanning with configurable delays
