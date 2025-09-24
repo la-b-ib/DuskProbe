@@ -534,7 +534,10 @@ https://api.example.com/v1
 
 <hr>
 
-## Version History
+## Version History <a href=""><img align="right" width="150" height="150" src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/gif/bitcoin-lock.gif">
+
+
+
 
 - **v5.0**: Complete rewrite with advanced features, OWASP 2025 compliance, professional HTML reports
 - **v4.5**: Shell-optimized version with command-line interface
