@@ -16,8 +16,10 @@ DuskProbe is a state-of-the-art cybersecurity assessment tool designed for profe
 ## File Structure Analysis
 
 ```mermaid
-graph TD
-    A[DuskProbe Root] --> B[Documentation Files]
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#ff6b6b'}, 'flowchart': {'rankSpacing': 80, 'nodeSpacing': 50, 'curve': 'basis'}, 'layout': {'hierarchySeparation': 80, 'nodeSeparation': 50, 'edgeSeparation': 20}}}%%
+graph LR
+    A[DuskProbe Root]
+    A --> B[Documentation Files]
     A --> C[duskprobe/ - Main Package]
     A --> D[preview/ - Media Assets]
     
@@ -67,18 +69,32 @@ graph TD
     
     D2B --> D2B1[desktop.png - 10 terminal screenshots]
     
-    style A fill:#ff6b6b,stroke:#333,stroke-width:3px,color:#fff
-    style C1 fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#000
-    style C fill:#45b7d1,stroke:#333,stroke-width:2px,color:#fff
-    style B fill:#96ceb4,stroke:#333,stroke-width:2px,color:#000
-    style D fill:#ffd93d,stroke:#333,stroke-width:2px,color:#000
+    style A fill:#ff1744,stroke:#d50000,stroke-width:4px,color:#fff
+    style C1 fill:#00e676,stroke:#00c853,stroke-width:3px,color:#000
+    style C fill:#2196f3,stroke:#1976d2,stroke-width:3px,color:#fff
+    style B fill:#9c27b0,stroke:#7b1fa2,stroke-width:3px,color:#fff
+    style D fill:#ff9800,stroke:#f57c00,stroke-width:3px,color:#000
+    style B1 fill:#e91e63,stroke:#c2185b,stroke-width:2px,color:#fff
+    style B2 fill:#673ab7,stroke:#512da8,stroke-width:2px,color:#fff
+    style B3 fill:#3f51b5,stroke:#303f9f,stroke-width:2px,color:#fff
+    style B4 fill:#009688,stroke:#00796b,stroke-width:2px,color:#fff
+    style B5 fill:#4caf50,stroke:#388e3c,stroke-width:2px,color:#fff
+    style C2 fill:#ff5722,stroke:#e64a19,stroke-width:2px,color:#fff
+    style C3 fill:#795548,stroke:#5d4037,stroke-width:2px,color:#fff
+    style C4 fill:#607d8b,stroke:#455a64,stroke-width:2px,color:#fff
+    style C5 fill:#ffc107,stroke:#ffa000,stroke-width:2px,color:#000
+    style C6 fill:#cddc39,stroke:#afb42b,stroke-width:2px,color:#000
+    style D1 fill:#e1bee7,stroke:#8e24aa,stroke-width:2px,color:#000
+    style D2 fill:#ffcdd2,stroke:#f44336,stroke-width:2px,color:#000
 ```
 
-## Python Code Architecture - Ultra Detailed Structure
+## Python Code Architecture
 
 ```mermaid
-graph TD
-    A[DuskProbe v5.0 - Main Python Application 7996 lines] --> B[Import System & Dependencies]
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#ff4757'}, 'flowchart': {'rankSpacing': 75, 'nodeSpacing': 45, 'curve': 'basis'}, 'layout': {'hierarchySeparation': 75, 'nodeSeparation': 45, 'edgeSeparation': 15}}}%%
+graph LR
+    A[DuskProbe v5.0 - Main Python Application 7996 lines]
+    A --> B[Import System & Dependencies]
     A --> C[Configuration Management Layer]
     A --> D[Asynchronous Network Layer]
     A --> E[Security Engine Core]
@@ -383,24 +399,36 @@ graph TD
     I4 --> I4C[display_professional_footer - Credits]
     I4 --> I4D[check_dependencies - Validation]
     
-    %% Styling
-    style A fill:#ff4757,stroke:#333,stroke-width:4px,color:#fff
-    style E fill:#2ed573,stroke:#333,stroke-width:3px,color:#000
-    style D fill:#1e90ff,stroke:#333,stroke-width:3px,color:#fff
-    style F fill:#ffa502,stroke:#333,stroke-width:3px,color:#000
-    style G fill:#ff6348,stroke:#333,stroke-width:3px,color:#fff
-    style H fill:#a55eea,stroke:#333,stroke-width:3px,color:#fff
-    style I fill:#26de81,stroke:#333,stroke-width:3px,color:#000
-    style E1A1 fill:#ff9ff3,stroke:#333,stroke-width:2px,color:#000
-    style E1C1 fill:#54a0ff,stroke:#333,stroke-width:2px,color:#fff
-    style E1C2 fill:#5f27cd,stroke:#333,stroke-width:2px,color:#fff
+    %% Styling - Ultra Vibrant Color Scheme
+    style A fill:#e91e63,stroke:#ad1457,stroke-width:5px,color:#fff
+    style E fill:#00e676,stroke:#00c853,stroke-width:4px,color:#000
+    style D fill:#2196f3,stroke:#1565c0,stroke-width:4px,color:#fff
+    style F fill:#ff9800,stroke:#ef6c00,stroke-width:4px,color:#000
+    style G fill:#9c27b0,stroke:#6a1b9a,stroke-width:4px,color:#fff
+    style H fill:#ff5722,stroke:#d84315,stroke-width:4px,color:#fff
+    style I fill:#4caf50,stroke:#2e7d32,stroke-width:4px,color:#fff
+    style B fill:#673ab7,stroke:#4527a0,stroke-width:3px,color:#fff
+    style C fill:#009688,stroke:#00695c,stroke-width:3px,color:#fff
+    style E1A1 fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
+    style E1C1 fill:#03a9f4,stroke:#0277bd,stroke-width:3px,color:#fff
+    style E1C2 fill:#8bc34a,stroke:#558b2f,stroke-width:3px,color:#000
+    style B1 fill:#f44336,stroke:#c62828,stroke-width:2px,color:#fff
+    style B2 fill:#3f51b5,stroke:#283593,stroke-width:2px,color:#fff
+    style B3 fill:#795548,stroke:#4e342e,stroke-width:2px,color:#fff
+    style B4 fill:#607d8b,stroke:#37474f,stroke-width:2px,color:#fff
+    style C1 fill:#e1bee7,stroke:#7b1fa2,stroke-width:2px,color:#000
+    style D1 fill:#b3e5fc,stroke:#0277bd,stroke-width:2px,color:#000
+    style F1 fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    style G1 fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px,color:#000
 ```
 
-## Jupyter Notebook Code Architecture - Legacy Version Analysis
+## Jupyter Notebook Code Architecture
 
 ```mermaid
-graph TD
-    A[DuskProbe v4.5 Jupyter Notebook - 1056 lines] --> B[Cell Structure Analysis]
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#ff6b6b'}, 'flowchart': {'rankSpacing': 70, 'nodeSpacing': 40, 'curve': 'basis'}, 'layout': {'hierarchySeparation': 70, 'nodeSeparation': 40, 'edgeSeparation': 10}}}%%
+graph LR
+    A[DuskProbe v4.5 Jupyter Notebook - 1056 lines]
+    A --> B[Cell Structure Analysis]
     A --> C[Import & Dependency Management]
     A --> D[Core Scanner Classes]
     A --> E[Vulnerability Detection Engine]
@@ -628,15 +656,27 @@ graph TD
     H4 --> H4C[Impact Severity Forecasting]
     H4 --> H4D[Remediation Priority Optimization]
     
-    %% Notebook-Specific Styling
-    style A fill:#ff6b6b,stroke:#333,stroke-width:4px,color:#fff
-    style D fill:#4ecdc4,stroke:#333,stroke-width:3px,color:#000
-    style E fill:#45b7d1,stroke:#333,stroke-width:3px,color:#fff
-    style F fill:#96ceb4,stroke:#333,stroke-width:3px,color:#000
-    style G fill:#ffd93d,stroke:#333,stroke-width:3px,color:#000
-    style H fill:#dda0dd,stroke:#333,stroke-width:3px,color:#000
-    style B fill:#ff9ff3,stroke:#333,stroke-width:2px,color:#000
-    style C fill:#54a0ff,stroke:#333,stroke-width:2px,color:#fff
+    %% Notebook-Specific Ultra Vibrant Styling
+    style A fill:#e91e63,stroke:#ad1457,stroke-width:5px,color:#fff
+    style D fill:#00bcd4,stroke:#00838f,stroke-width:4px,color:#fff
+    style E fill:#3f51b5,stroke:#283593,stroke-width:4px,color:#fff
+    style F fill:#4caf50,stroke:#2e7d32,stroke-width:4px,color:#fff
+    style G fill:#ff9800,stroke:#ef6c00,stroke-width:4px,color:#000
+    style H fill:#9c27b0,stroke:#6a1b9a,stroke-width:4px,color:#fff
+    style B fill:#ff5722,stroke:#d84315,stroke-width:3px,color:#fff
+    style C fill:#2196f3,stroke:#1565c0,stroke-width:3px,color:#fff
+    style B1 fill:#ffeb3b,stroke:#f57f17,stroke-width:2px,color:#000
+    style B2 fill:#8bc34a,stroke:#558b2f,stroke-width:2px,color:#000
+    style B3 fill:#ff4081,stroke:#c2185b,stroke-width:2px,color:#fff
+    style B4 fill:#7c4dff,stroke:#512da8,stroke-width:2px,color:#fff
+    style C1 fill:#40e0d0,stroke:#00695c,stroke-width:2px,color:#000
+    style C2 fill:#ffa726,stroke:#e65100,stroke-width:2px,color:#000
+    style C3 fill:#ab47bc,stroke:#7b1fa2,stroke-width:2px,color:#fff
+    style C4 fill:#66bb6a,stroke:#2e7d32,stroke-width:2px,color:#fff
+    style D1 fill:#42a5f5,stroke:#1565c0,stroke-width:2px,color:#fff
+    style D2 fill:#26c6da,stroke:#00838f,stroke-width:2px,color:#000
+    style D3 fill:#5c6bc0,stroke:#283593,stroke-width:2px,color:#fff
+    style D4 fill:#78909c,stroke:#37474f,stroke-width:2px,color:#fff
 ```
 
 ## Detailed Code Structure Analysis
