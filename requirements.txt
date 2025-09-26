@@ -1,0 +1,85 @@
+# DuskProbe v5.0 Streamlit Web Application - Required Dependencies
+# Complete security scanner with web interface and professional reporting
+
+# ===== CORE STREAMLIT DEPENDENCIES (REQUIRED) =====
+streamlit>=1.28.0         # Main web application framework
+pandas>=2.0.0            # Data analysis and table display
+numpy>=1.24.0            # Numerical computing support
+
+# ===== HTTP AND NETWORKING (REQUIRED) =====
+aiohttp>=3.8.0           # Asynchronous HTTP requests for concurrent scanning
+requests>=2.31.0         # HTTP library for basic requests
+urllib3>=2.0.0           # HTTP client with connection pooling
+
+# ===== DATA VISUALIZATION (REQUIRED FOR FULL FEATURES) =====
+plotly>=5.15.0           # Interactive radar charts and visualizations
+# Note: Plotly enables professional radar charts for severity and risk analysis
+
+# ===== WEB PARSING AND ANALYSIS (REQUIRED) =====
+beautifulsoup4>=4.12.0   # HTML parsing for web content analysis
+lxml>=4.9.0             # Fast XML/HTML processing
+fake-useragent>=1.4.0    # User agent rotation for stealth scanning
+
+# ===== CONFIGURATION AND OUTPUT (REQUIRED) =====
+PyYAML>=6.0.1           # Configuration file support
+rich>=13.5.0            # Enhanced console output formatting
+
+# ===== ENHANCED HTTP CAPABILITIES (RECOMMENDED) =====
+httpx>=0.24.0           # Modern HTTP client with HTTP/2 support
+
+# ===== OSINT AND INTELLIGENCE GATHERING (OPTIONAL) =====
+# Uncomment these for advanced intelligence features:
+# python-whois>=0.8.0      # WHOIS domain information lookup
+# dnspython>=2.4.0         # DNS resolution and analysis
+# builtwith>=1.3.7         # Technology stack detection
+# waybackpy>=3.0.6         # Wayback Machine historical data
+
+# ===== SEARCH ENGINE AND API INTEGRATION (OPTIONAL) =====
+# Requires API keys - uncomment if you have accounts:
+# shodan>=1.29.1           # Shodan search engine API
+# censys>=2.2.3            # Censys internet scanning API
+
+# ===== NETWORK ANALYSIS (OPTIONAL - REQUIRES ADMIN PRIVILEGES) =====
+# Uncomment for advanced network scanning (may require sudo/admin):
+# scapy>=2.5.0             # Low-level network packet manipulation
+# python-nmap>=0.7.1       # Nmap integration for port scanning
+
+# ===== SSL/TLS AND CRYPTOGRAPHY (OPTIONAL) =====
+# Uncomment for advanced SSL analysis:
+# sslyze>=5.1.3            # SSL/TLS configuration analysis
+# pycryptodome>=3.19.0     # Cryptographic functions and analysis
+
+# ===== PROXY AND ANONYMITY (OPTIONAL) =====
+# Uncomment for Tor support:
+# stem>=1.8.1              # Tor network integration and control
+
+# ===== BROWSER AUTOMATION (OPTIONAL) =====
+# Uncomment for JavaScript-heavy site analysis:
+# selenium>=4.15.0         # Browser automation for dynamic content
+# requests-html>=0.10.0    # JavaScript rendering support
+
+# ===== ADVANCED VULNERABILITY DETECTION (OPTIONAL) =====
+# Uncomment for additional vulnerability sources:
+# vulners>=2.1.9           # Vulnerability database integration
+# python-magic>=0.4.27     # File type detection and analysis
+
+# ===== SUBDOMAIN AND RECONNAISSANCE (OPTIONAL) =====
+# Uncomment for subdomain enumeration:
+# sublist3r>=1.1           # Subdomain discovery tool
+
+# ===== AUTHENTICATION AND SESSION HANDLING (OPTIONAL) =====
+# Uncomment for advanced authentication:
+# PyJWT>=2.8.0             # JWT token handling and analysis
+# paramiko>=3.3.1          # SSH protocol support
+
+# ===== INSTALLATION NOTES =====
+# 1. Install core requirements: pip install -r requirements_streamlit.txt
+# 2. For full features, uncomment optional dependencies as needed
+# 3. Some packages may require additional system dependencies
+# 4. Run with: streamlit run streamlit_duskprobe.py
+# 
+# ===== SYSTEM REQUIREMENTS =====
+# - Python 3.8+
+# - For Plotly charts: Modern web browser with JavaScript enabled
+# - For network scanning: May require administrator privileges
+# - For Tor features: Tor daemon must be installed and running
