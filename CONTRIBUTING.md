@@ -1,121 +1,49 @@
 
----
+# <SAMP> Contributing to DuskProbe
 
-# 🤝 Contributing to DuskProbe
+<samp> **Thank you for considering contributing to DuskProbe! All types of contributions are welcome and appreciated.**
 
-Welcome, security enthusiast! We're thrilled you're interested in contributing to **DuskProbe v4.5**, a professional-grade web vulnerability scanner. This guide outlines how to contribute effectively, securely, and ethically.
 
----
+## <samp> Getting Started
 
-## 🧠 Philosophy
+<samp>
+   
+- **Pre‑Contribution Checks – Verify open issues, discuss major changes via a new issue, ensure you have a GitHub account.**
+- **Repo Setup – Fork the repository on GitHub to start your contribution.**
 
-DuskProbe is built on three core principles:
+## Types of Contributions
 
-- **Security-first**: All code must follow secure development practices.
-- **Ethical use**: Contributions must align with responsible disclosure and legal scanning.
-- **Technical excellence**: We value clean, modular, and well-documented code.
+- **Report Bugs – Use GitHub issues, include steps, expected vs actual behavior, screenshots, and device info.**
+- **Suggest Enhancements – Open issues with the enhancement label, describe clearly, explain value, add mockups if possible.**
+- **Contribute Code – Fork repo, create branch, make and test changes, then submit a pull request.**
+- **Improve Docs – Fix typos, clarify explanations, add examples, and enhance structure.**
 
----
 
-## 🛠️ How to Contribute
-
-### 1. Fork the Repository
-
-```bash
-git clone https://github.com/la-b-ib/duskprobe.git
-cd duskprobe
-git checkout -b feature/YourFeature
-```
-
-### 2. Make Your Changes
-
-- Follow [PEP8](https://peps.python.org/pep-0008/) coding standards.
-- Write clear, descriptive commit messages.
-- Include docstrings and inline comments for complex logic.
-- Add unit tests for new features or bug fixes.
-- Avoid hardcoded secrets, payloads, or credentials.
-
-### 3. Run Tests
-
-Ensure your changes pass all tests and linting checks:
+## Development Setup
 
 ```bash
-pytest
-flake8 duskprobe/
+# Clone your fork
+git clone https://github.com/YOUR-USERNAME/DuskProbe.git
+
+# Navigate to project directory
+cd https://github.com/la-b-ib/DuskProbe.git
+
 ```
 
-### 4. Submit a Pull Request
+## Pull Request Process
 
-Push your branch and open a pull request:
+- **Follow Guidelines & Docs – Ensure code style compliance, update README if needed, and include screenshots for visual changes.**
+- **Pull Request Clarity – Clearly describe what you changed, why, any context, and reference related issues.**
 
-```bash
-git push origin feature/YourFeature
+## Commit Message Guidelines
+
+
+```
+type(scope): description
 ```
 
-Include:
+- **Use Conventional Commits – Follow `type(scope): description` format with types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`.**
 
-- A clear description of the feature or fix
-- Any relevant screenshots, logs, or test output
-- Reference to related issues (if applicable)
+```
+feat(contact): add form validation
 
----
-
-## 🔐 Secure Coding Guidelines
-
-- Validate all user input and sanitize outputs.
-- Avoid insecure dependencies or deprecated libraries.
-- Use HTTPS for all external requests.
-- Implement retry logic and timeouts for network calls.
-- Log errors securely without exposing sensitive data.
-
----
-
-## ⚖️ Ethical Standards
-
-DuskProbe is intended for **authorized security testing only**. Contributions must not:
-
-- Include black-hat payloads or exploit code
-- Enable scanning without user consent
-- Circumvent ethical disclaimers or prompts
-
----
-
-## 📦 Feature Suggestions
-
-We welcome ideas for:
-
-- New vulnerability checks (e.g., SSRF, RCE)
-- Improved crawling logic
-- Report formatting enhancements
-- Performance optimizations
-- Integration with other tools (e.g., Burp, OWASP ZAP)
-
-Open an issue with the label `enhancement` to start the discussion.
-
----
-
-## 🧪 Bug Reports
-
-If you find a bug:
-
-1. Search existing issues to avoid duplicates.
-2. Open a new issue with:
-   - Steps to reproduce
-   - Expected vs. actual behavior
-   - Environment details (OS, Python version, Colab/local)
-
-Use the label `bug`.
-
----
-
-## 📜 License
-
-By contributing, you agree that your code will be licensed under the [MIT License](LICENSE).
-
----
-
-## 🙌 Thank You
-
-Your contributions help make DuskProbe a powerful and ethical tool for the security community. We appreciate your time, skill, and commitment to making the web safer.
-
----
