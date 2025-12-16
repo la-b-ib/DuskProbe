@@ -2,7 +2,7 @@
 
 <samp>
  
-**DuskProbe is a web application vulnerability testing tool exclusively designed for legitimate security professionals, penetration testers, and authorized personnel conducting lawful security evaluations from target system owners.**
+**`DuskProbe` is a web application vulnerability testing tool exclusively designed for legitimate security professionals, penetration testers, and authorized personnel conducting lawful security evaluations from target system owners.**
 
 
 
