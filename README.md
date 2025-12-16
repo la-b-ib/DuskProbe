@@ -72,7 +72,9 @@
 <details>
   
 **<summary>Legal Disclaimer</summary>** 
+```javascript
 
-**Use only with explicit authorization from system owners. Comply fully with all applicable cybersecurity laws/regulations. Conduct scans solely for legitimate security testing purposes**  
-
+Use only with explicit authorization from system owners. Comply fully with all applicable cybersecurity laws/regulations. Conduct scans solely for legitimate security testing purposes
+  
+```
 </details>
