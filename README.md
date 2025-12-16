@@ -5,6 +5,29 @@
 **DuskProbe is a web application security testing framework built for authorized professionals, penetration testers, and lawful security assessments. Leveraging an asynchronous engine with aiohttp and Streamlit, it unifies deep passive reconnaissance with active vulnerability scanning to uncover critical flaws — from OWASP Top 10 risks to advanced business logic vulnerabilities — ensuring comprehensive coverage of modern web attack surfaces.**
 
 
+<details>
+ 
+**<summary>DuskProbe Preview</summary>**
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/1.png" width="24%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/2.png" width="24%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/3.png" width="24%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/4.png" width="24%" />
+  
+</p>
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/5.png" width="24%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/6.png" width="24%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/7.png" width="24%" />
+  <img src="https://raw.githubusercontent.com/la-b-ib/DuskProbe/main/preview/8.png" width="24%" />
+  
+</p>
+
+</details>
+
+
 
 ### **LEGAL DISCLAIMER**  
 
