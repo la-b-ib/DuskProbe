@@ -7,6 +7,8 @@
 
 <details>
 
+**<summary>Project Details</summary>**
+
 <details>
   
 **<summary>DuskProbe Preview</summary>**
